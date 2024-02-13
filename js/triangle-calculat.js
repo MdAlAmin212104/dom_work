@@ -43,8 +43,14 @@ function calculateRhombusArea(){
       
 }
 
-function 
+function calculatePentagonArea(){
+      const p = getInputValue('pentagon-p');
+      const b = getInputValue('pentagon-b');
+      const area = 0.5 * p * b;
+      getInnerTextarea('pentagon-area', area);
+}
 
+function calculate
 function getInputValue(id){
       const inputValue = document.getElementById(id).value;
       const value = parseFloat(inputValue);
