@@ -21,3 +21,37 @@ function calculateRectangle(){
       rectangleArea.innerText = area;
 
 }
+
+
+
+function calculateParallelogram(){
+      const base = getInputValue('parallelogram-base');
+      const height = getInputValue('parallelogram-height');
+      const area = base * height;
+      getInnerTextarea('parallelogram-area', area);
+      
+
+      
+}
+
+
+function calculateRhombusArea(){
+      const d1 = getInputValue('rhombus-d1');
+      const d2 = getInputValue('rhombus-d2');
+      const area = 0.5 * d1 * d2;
+      getInnerTextarea('rhombus-area', area);
+      
+}
+
+function 
+
+function getInputValue(id){
+      const inputValue = document.getElementById(id).value;
+      const value = parseFloat(inputValue);
+      return value;
+}
+
+function getInnerTextarea(id, value){
+      const area = document.getElementById(id);
+      area.innerText = value;
+}
