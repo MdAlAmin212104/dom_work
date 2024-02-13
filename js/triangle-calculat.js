@@ -50,7 +50,12 @@ function calculatePentagonArea(){
       getInnerTextarea('pentagon-area', area);
 }
 
-function calculate
+function calculateEllipseArea(){
+      const a = getInputValue('ellipse-a');
+      const b = getInputValue('ellipse-b');
+      const area = a * b;
+      getInnerTextarea('ellipse-area', area);
+}
 function getInputValue(id){
       const inputValue = document.getElementById(id).value;
       const value = parseFloat(inputValue);
