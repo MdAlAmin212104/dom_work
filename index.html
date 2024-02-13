@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Geometry Gem</title>
+
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+      <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="m-8">
+      <main>
+            <div class="flex flex-col md:flex-row">
+                  <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                        <!-- Triangle card -->
+                        <div class="card w-auto bg-base-100 shadow-xl">
+                            <figure><img src="images/triangle.png" alt="Shoes" /></figure>
+                            <div class="card-body">
+                                <h2 class="card-title">Triangle</h2>
+                                <p class="text-center text-3xl">Area = 0.5 X b X h</p>
+                                <div class="">
+                                    <input id="triangle-base" class="w-24 text-2xl p-2 rounded-sm" type="text" placeholder="b">
+                                    <span class="mr-4 ml-2">cm</span>
+                                    <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="triangle-height" placeholder="h">
+                                    <span>cm</span>
+                                </div>
+                                <div>
+                                    <p class="text-2xl">Area: <span id="triangle-area"></span> <span>cm<sup>2</sup></span></p>
+                                </div>
+                                <div class="card-actions">
+                                    <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculate</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Triangle card -->
+                        <div class="card w-auto bg-base-100 shadow-xl">
+                            <figure><img src="images/rectangle.png" alt="Shoes" /></figure>
+                            <div class="card-body">
+                                <h2 class="card-title">Triangle</h2>
+                                <p class="text-center text-3xl">Area = 0.5 X b X h</p>
+                                <div class="">
+                                    <input id="rectangle-width" class="w-24 text-2xl p-2 rounded-sm" type="text" placeholder="w">
+                                    <span class="mr-4 ml-2">cm</span>
+                                    <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="rectangle-length" placeholder="l">
+                                    <span>cm</span>
+                                </div>
+                                <div>
+                                    <p class="text-2xl">Area: <span id="rectangle-area"></span> <span>cm<sup>2</sup></span></p>
+                                </div>
+                                <div class="card-actions">
+                                    <button onclick="calculateRectangle()" class="btn btn-primary w-full">Calculate</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Triangle card -->
+                        <div class="card w-auto bg-base-100 shadow-xl">
+                            <figure><img src="images/triangle.png" alt="Shoes" /></figure>
+                            <div class="card-body">
+                                <h2 class="card-title">Triangle</h2>
+                                <p class="text-center text-3xl">Area = 0.5 X b X h</p>
+                                <div class="">
+                                    <input id="triangle-base" class="w-24 text-2xl p-2 rounded-sm" type="text" placeholder="b">
+                                    <span class="mr-4 ml-2">cm</span>
+                                    <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="triangle-height" placeholder="h">
+                                    <span>cm</span>
+                                </div>
+                                <div>
+                                    <p class="text-2xl">Area: <span id="triangle-area"></span> <span>cm<sup>2</sup></span></p>
+                                </div>
+                                <div class="card-actions">
+                                    <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculate</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                  <div class="w-auto border-2 border-gray-700 rounded-md"> 
+                        <h3 class="text-3xl text-center p-4">Area Calculator</h3>
+      
+                  </div>
+            </div>
+      </main>
+  
+
+      <script src="js/triangle-calculat.js"></script>
+</body>
+</html>
